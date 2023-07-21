@@ -1,22 +1,42 @@
 <html>
   <head>
-    <title>My scratchboard page</title>
+    <title>Ridzwan's scratchpad</title>
+    <link href="/static/dist/css/output.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div>This is the first dummy comment.</div>
-
     <div>
-      This is the the second dummy comment. It's no more interesting than the
-      first.
+      <h1 class="text-4xl font-bold p-4">My Scratchpad</h1>
+      <div class="comment">This is the first dummy comment.</div>
+
+      <div class="comment">
+        This is the the second dummy comment. It's no more interesting than the
+        first.
+      </div>
+
+      <div class="comment">
+        This is the third dummy comment. It's actually quite exciting!
+      </div>
     </div>
 
-    <div>This is the third dummy comment. It's actually quite exciting!</div>
-
-    <div>
-      <form action="." method="POST">
-        <textarea name="contents" placeholder="Enter a comment"></textarea>
-        <input type="submit" value="Post comment" />
+    <div class="p-4">
+      <form action="#" method="POST">
+        <label
+          for="message"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Your note</label
+        >
+        <textarea
+          id="message"
+          rows="4"
+          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Write your thoughts here..."
+        ></textarea>
+        <input
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-4"
+          value="Post comment"
+        />
       </form>
     </div>
   </body>
