@@ -6,3 +6,4 @@ This project allows for anyone to post a comment, and these comments are then sa
 * Flask
 * Bootstrap
 * MySQL
+* Tailwind
