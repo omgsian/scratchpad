@@ -8,7 +8,8 @@ The comments are then saved to a MySQL database instance that runs on Azure.
 
 - Flask
 - Bootstrap
-- MySQL
+- MySQL (Azure)
+- PythonAnywhere (host)
 - Tailwind
 
 # Live Demo
