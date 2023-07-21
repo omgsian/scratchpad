@@ -6,21 +6,12 @@
 
   <body>
     <div class="container">
-      <div id="comments">
-        <h1 class="text-4xl font-bold p-4">My Scratchpad</h1>
-        <div class="comment">This is the first dummy comment.</div>
+      <h1 class="text-4xl font-bold p-4">My Scratchpad</h1>
+      {% for comment in comments %}
+      <div class="row comment">{{ comment }}</div>
+      {% endfor %}
 
-        <div class="comment">
-          This is the the second dummy comment. It's no more interesting than
-          the first.
-        </div>
-
-        <div class="comment">
-          This is the third dummy comment. It's actually quite exciting!
-        </div>
-      </div>
-
-      <div id="form" class="p-4">
+      <div class="p-4">
         <form action="#" method="POST">
           <label
             for="message"
@@ -29,6 +20,7 @@
           >
           <textarea
             id="message"
+            name="contents"
             rows="4"
             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Write your thoughts here..."
