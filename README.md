@@ -1,9 +1,20 @@
 # About the project
 
-This project allows for anyone to post a comment, and these comments are then saved to a MySQL database that resides on Azure.
+This is a scratchpad application whereby the author can write a comment.
+
+The comments are then saved to a MySQL database instance that runs on Azure.
 
 # Technologies used
-* Flask
-* Bootstrap
-* MySQL
-* Tailwind
+
+- Flask
+- Bootstrap
+- MySQL
+- Tailwind
+
+# Live Demo
+
+To include this detail later.
+
+# Sources
+
+- https://blog.pythonanywhere.com/121/
