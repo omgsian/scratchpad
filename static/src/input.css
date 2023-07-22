@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .comment {
-  @apply bg-blue-100 p-4 m-4 rounded-md;
+  @apply bg-blue-100 p-2 m-4 rounded-lg;
 }
 
 a {

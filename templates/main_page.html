@@ -8,35 +8,30 @@
     />
   </head>
   <body>
-    <div class="container max-w-full overflow-none">
-      <div class="row sticky top-0 bg-black">
-        <h1 class="text-2xl text-white font-bold p-4">My Scratchpad</h1>
+    <div class="container max-w-full max-h-full">
+      <div class="flex sticky top-0 bg-black h-16 items-center">
+        <h1 class="text-lg text-white font-bold ml-4">My Scratchpad 📝</h1>
       </div>
-
-      <div class="m-2">
-        <p>
+      <div class="overscroll-none h-full">
+        <p class="p-4">
           This project was developed by
           <a href="https://www.linkedin.com/in/ridzwanharon/">Ridzwan</a>. View
           <a href="https://github.com/omgsian/scratchpad">source code</a>.
         </p>
-      </div>
-
-      <div class="h-full overflow-auto">
         {% for comment in comments %}
-        <div class="row comment">{{ comment }}</div>
+        <div class="comment">{{ comment }}</div>
         {% endfor %}
       </div>
-
-      <div class="row sticky bottom-0 border-t-2 bg-white">
+      <div class="sticky bottom-0 border-t-4 bg-slate-50 h-auto">
         <form action="#" method="POST">
-          <div class="flex space-x-2 p-4">
-            <div class="flex w-full sm:w-full">
+          <div class="flex space-x-2 p-4 h-auto">
+            <div class="w-full">
               <textarea
                 id="message"
                 minlength="3"
                 name="contents"
                 rows="4"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="Write your thoughts here..."
                 required
               ></textarea>
@@ -45,8 +40,8 @@
               <input
                 id="submitButton"
                 type="submit"
-                class="bg-blue-500 hover:bg-blue-700 cursor-pointer text-white font-bold py-2 px-4 rounded-lg"
-                value="Post comment"
+                class="bg-blue-500 hover:bg-blue-700 cursor-pointer text-white font-bold w-32 rounded-lg"
+                value="Post"
               />
             </div>
           </div>
