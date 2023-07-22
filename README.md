@@ -6,16 +6,16 @@ The comments are then saved to a MySQL database instance that runs on Azure.
 
 # Technologies used
 
-- Flask
-- Bootstrap
+- Python v.3.10.5
+- Flask v2.1.2
+- tailwind@latest
 - MySQL (Azure)
 - PythonAnywhere (host)
-- Tailwind
 
 # Live Demo
 
-To include this detail later.
+http://omgwhut.pythonanywhere.com/
 
-# Sources
+# References
 
 - https://blog.pythonanywhere.com/121/

@@ -20,6 +20,7 @@
   <body>
     <div class="container">
       <h1 class="text-4xl font-bold p-4">My Scratchpad</h1>
+
       {% for comment in comments %}
       <div class="row comment">{{ comment }}</div>
       {% endfor %}
@@ -47,6 +48,11 @@
             value="Post comment"
           />
         </form>
+        <p>
+          This project was developed by
+          <a href="https://www.linkedin.com/in/ridzwanharon/">Ridzwan</a>. View
+          <a href="https://github.com/omgsian/scratchpad">source code</a>.
+        </p>
       </div>
     </div>
   </body>
