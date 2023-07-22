@@ -1,4 +1,4 @@
-# About the project
+# About the project 👹
 
 This is a scratchpad application whereby the author can write a comment.
 
