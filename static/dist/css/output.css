@@ -588,6 +588,10 @@ video {
   width: 100%;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
