@@ -2,8 +2,9 @@ from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)
 
-comments = []
+# comments = ["hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello2", ]
 
+comments = ["Hello 👋🏼 Enter a message in the textarea below."]
 
 @app.route("/", methods=["GET", "POST"])
 def index():

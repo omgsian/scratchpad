@@ -7,35 +7,42 @@
       content="width=device-width, initial-scale=1.0, user-scalable=0"
     />
   </head>
-  <body>
-    <div class="container max-w-full">
-      <div class="flex sticky top-0 bg-slate-600 h-16 items-center">
-        <h1 class="text-lg text-white font-bold ml-4">My Scratchpad 📝</h1>
-      </div>
-      <div class="h-auto">
-        <p class="p-4">
-          This project was developed by
-          <a href="https://www.linkedin.com/in/ridzwanharon/">Ridzwan</a>. View
-          <a href="https://github.com/omgsian/scratchpad">source code</a>.
-        </p>
-        {% for comment in comments %}
-        <div class="comment">{{ comment }}</div>
-        {% endfor %}
-      </div>
-      <footer class="bg-slate-600 sticky bottom-0">
+  <body class="bg-slate-200">
+    <div id="sticky" class="flex sticky top-0 bg-slate-600">
+      <h1 class="flex text-lg text-white h-16 font-bold ml-4 items-center">
+        My Scratchpad 📝
+      </h1>
+    </div>
+    <div class="max-w-full min-h-screen overflow-auto bg-white">
+      <!-- <div class="container"> -->
+      <!-- <div
+        id="comments"
+        class="bg-white p-4 h-4/6 overflow-auto overscroll-auto"
+      > -->
+      <p class="m-4">
+        This project was developed by
+        <a href="https://www.linkedin.com/in/ridzwanharon/">Ridzwan</a>. View
+        <a href="https://github.com/omgsian/scratchpad">source code</a>.
+      </p>
+      {% for comment in comments %}
+      <div class="comment">{{ comment }}</div>
+      {% endfor %}
+      <!-- </div> -->
+    </div>
+    <div id="footer" class="sticky bottom-0">
+      <footer class="bg-slate-600">
         <form action="#" method="POST">
-          <div class="flex space-x-2 p-4 h-auto">
-            <div class="w-full">
-              <textarea
-                id="message"
-                minlength="3"
-                name="contents"
-                rows="4"
-                class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Write your thoughts here... 💭"
-                required
-              ></textarea>
-            </div>
+          <div class="flex space-x-2 p-4">
+            <textarea
+              id="message"
+              minlength="3"
+              name="contents"
+              rows="4"
+              class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Write your thoughts here... 💭"
+              required
+            ></textarea>
+
             <div class="flex">
               <input
                 id="submitButton"
