@@ -8,11 +8,11 @@
     />
   </head>
   <body>
-    <div class="container max-w-full max-h-full">
-      <div class="flex sticky top-0 bg-black h-16 items-center">
+    <div class="container max-w-full">
+      <div class="flex sticky top-0 bg-slate-600 h-16 items-center">
         <h1 class="text-lg text-white font-bold ml-4">My Scratchpad 📝</h1>
       </div>
-      <div class="overscroll-none h-full">
+      <div class="h-auto">
         <p class="p-4">
           This project was developed by
           <a href="https://www.linkedin.com/in/ridzwanharon/">Ridzwan</a>. View
@@ -22,7 +22,7 @@
         <div class="comment">{{ comment }}</div>
         {% endfor %}
       </div>
-      <div class="sticky bottom-0 border-t-4 bg-slate-50 h-auto">
+      <footer class="bg-slate-600 sticky bottom-0">
         <form action="#" method="POST">
           <div class="flex space-x-2 p-4 h-auto">
             <div class="w-full">
@@ -46,7 +46,7 @@
             </div>
           </div>
         </form>
-      </div>
+      </footer>
     </div>
   </body>
 </html>

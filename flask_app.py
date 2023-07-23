@@ -2,7 +2,7 @@ from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)
 
-comments = []
+comments = ['hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', 'hello', ]
 
 
 @app.route("/", methods=["GET", "POST"])
