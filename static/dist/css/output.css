@@ -675,6 +675,11 @@ video {
   height: 16rem;
 }
 
+.h-min {
+  height: -moz-min-content;
+  height: min-content;
+}
+
 .max-h-full {
   max-height: 100%;
 }
