@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 # comments = ["hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello2", ]
 
-comments = ["Hello 👋🏼 Enter a message in the textarea below."]
+comments = ["Hello 👋🏼"]
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -13,10 +13,6 @@ def index():
 
     comments.append(request.form["contents"])
     return redirect(url_for("index"))
-
-
-# return "<p>hello</p>"
-
 
 if __name__ == "__main__":
     app.run(debug=True)
