@@ -42,13 +42,13 @@
       </p>
       {% for comment in comments %}
       <div class="comment">{{ comment.content }}</div>
-      {% endfor %}
       <div>
         <small
           >Posted {{ timestamp.strftime("%A, %d %B %Y at %H:%M") }} by
           anonymous</small
         >
       </div>
+      {% endfor %}
     </div>
     <div id="footer" class="sticky bottom-0">
       {% if current_user.is_authenticated %}
