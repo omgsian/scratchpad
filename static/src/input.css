@@ -7,7 +7,7 @@
 }
 
 a {
-  @apply underline text-blue-500 hover:text-blue-800 visited:text-purple-600;
+  @apply underline text-blue-500 hover:text-blue-600 visited:text-blue-500;
 }
 
 body {
