@@ -1,6 +1,6 @@
 from flask import Flask, redirect, render_template, request, url_for
 from flask_sqlalchemy import SQLAlchemy
-from flask_login import login_user, LoginManager, UserMixin, login_required
+from flask_login import login_user, LoginManager, UserMixin, login_required, logout_user
 from werkzeug.security import check_password_hash, generate_password_hash
 
 
