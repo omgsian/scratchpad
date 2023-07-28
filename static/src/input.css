@@ -9,3 +9,7 @@
 a {
   @apply underline text-blue-500 hover:text-blue-800 visited:text-purple-600;
 }
+
+body {
+  @apply text-base;
+}
