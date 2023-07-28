@@ -24,6 +24,7 @@
       {% endfor %}
     </div>
     <div id="footer" class="sticky bottom-0">
+  % if current_user.is_authenticated %}
       <footer class="bg-slate-100">
         <form action="#" method="POST">
           <div class="flex space-x-2 p-4">
@@ -48,6 +49,7 @@
           </div>
         </form>
       </footer>
+      {% endif %}
     </div>
   </body>
 </html>
