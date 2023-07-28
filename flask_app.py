@@ -38,5 +38,21 @@ def index():
     return redirect(url_for("index"))
 
 
+@app.route("/login/")
+def login():
+    return render_template("login_page.html")
+
+
+@app.route("/login/", methods=["GET", "POST"])
+def login():
+    if request.method == "GET":
+        return render_template("login_page.html", error=False)
+
+    if request.form["username"] != "admin" or request.form["password"] != "secret":
+        return render_template("login_page.html", error=True)
+
+    return redirect(url_for("index"))
+
+
 if __name__ == "__main__":
     app.run(debug=True)
