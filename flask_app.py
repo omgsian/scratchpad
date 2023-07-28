@@ -26,25 +26,25 @@ login_manager.init_app(app)
 
 # comments = ["hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello", "hello2", ]
 
-class User(UserMixin):
 
+class User(UserMixin):
     def __init__(self, username, password_hash):
         self.username = username
         self.password_hash = password_hash
 
-
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
 
-
     def get_id(self):
         return self.username
+
 
 all_users = {
     "admin": User("admin", generate_password_hash("secret")),
     "bob": User("bob", generate_password_hash("less-secret")),
     "caroline": User("caroline", generate_password_hash("completely-secret")),
 }
+
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -83,13 +83,20 @@ def login():
         return render_template("login_page.html", error=True)
 
     login_user(user)
-    return redirect(url_for('index'))
+    return redirect(url_for("index"))
+
 
 @app.route("/logout/")
 @login_required
 def logout():
     logout_user()
-    return redirect(url_for('index'))
+    return redirect(url_for("index"))
+
+
+@app.route("/header/")
+def show_header():
+    return render_template("header.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
