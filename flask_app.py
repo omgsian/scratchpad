@@ -16,7 +16,7 @@ from datetime import datetime
 app = Flask(__name__)
 
 SQLALCHEMY_DATABASE_URI = (
-    "mysql+mysqlconnector://omgwhut:{password}@{hostname}/{databasename}".format(
+    "mysql+mysqlconnector://omgwhut:{password}@{hostname}/{databasename}?charset=utf8mb4".format(
         username="omgwhut",
         password="mrh1990x",
         hostname="omgwhut.mysql.pythonanywhere-services.com",
