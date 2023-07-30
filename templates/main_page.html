@@ -59,10 +59,9 @@
         </form>
       </footer>
       {% else %}
-      <footer>
+      <footer class="border border-y gray-200">
         <div class="flex space-x-2 p-4">
-          ℹ️ To write a comment, please&nbsp;
-          <a href="{{ url_for('login') }}">login</a>&nbsp;to your account.
+          ℹ️ <a href="{{ url_for('login') }}">Login</a>&nbsp;to comment.
         </div>
       </footer>
       {% endif %}
