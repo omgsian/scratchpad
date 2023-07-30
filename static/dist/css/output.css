@@ -776,6 +776,23 @@ video {
   background-color: transparent;
 }
 
+.bg-purple-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 245 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\] {
+  background-image: url('/img/hero-pattern.svg');
+}
+
+.bg-\[url\(\'\/static\/img\/hero-pattern\.svg\'\)\] {
+  background-image: url('/static/img/hero-pattern.svg');
+}
+
+.bg-\[url\(\'\/static\/img\/large-triangles\.png\'\)\] {
+  background-image: url('/static/img/large-triangles.png');
+}
+
 .p-2 {
   padding: 0.5rem;
 }
