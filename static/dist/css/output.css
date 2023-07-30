@@ -1117,6 +1117,15 @@ body {
     border-width: 0px;
   }
 
+  .md\:border {
+    border-width: 1px;
+  }
+
+  .md\:border-blue-600 {
+    --tw-border-opacity: 1;
+    border-color: rgb(37 99 235 / var(--tw-border-opacity));
+  }
+
   .md\:bg-transparent {
     background-color: transparent;
   }
@@ -1128,6 +1137,19 @@ body {
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .md\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .md\:pr-4 {
+    padding-right: 1rem;
   }
 
   .md\:text-2xl {
