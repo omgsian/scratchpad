@@ -77,7 +77,7 @@
       </p>
       {% for comment in comments %}
       <div class="comment">{{ comment.content }}</div>
-      <small class="p-2">
+      <small class="p-2 text-gray-600">
         Posted {% if comment.posted %} {{ comment.posted.strftime("%A, %d %B %Y
         at %H:%M") }} {% else %} at an unknown time {% endif %} by {% if
         comment.commenter %} {{ comment.commenter.username }} {% else %}
