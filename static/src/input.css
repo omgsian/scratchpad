@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .comment {
-  @apply bg-blue-100 m-4 pl-4 h-11 flex items-center rounded-lg;
+  @apply bg-blue-100 m-2 pl-4 h-11 flex items-center rounded-lg;
 }
 
 a {
