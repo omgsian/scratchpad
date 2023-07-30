@@ -53,11 +53,10 @@
         </form>
       </footer>
       {% else %}
-      <form action="#">
-          <div class="flex space-x-2 p-4">
-            To write a comment, please <a href="{{ url_for('login') }}">login</a> to your account.  
-          </div>
-        </form>
+      <footer>
+        <div class="flex space-x-2 p-4">
+          ℹ️ To write a comment, please <a href="{{ url_for('login') }}"> login /a> to your account.  
+        </div>
       </footer>
       {% endif %}
     </div>
